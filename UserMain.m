@@ -9,7 +9,7 @@
 clear all; clc; close all; 
 
 %% User data
-UserDataName = 'UserData';      % Default 4-bus system
+% UserDataName = 'UserData';      % Default 4-bus system
 
 % Example power systems in "Examples" folder:
 %
@@ -21,7 +21,7 @@ UserDataName = 'UserData';      % Default 4-bus system
 % UserDataName = 'IEEE_30Bus';
 % UserDataName = 'IEEE_57Bus';
 % UserDataName = 'AU14Gen_59Bus';
-% UserDataName = 'NETS_NYPS_68Bus';
+UserDataName = 'NETS_NYPS_68Bus';
 %
 % Dc power system examples:
 % UserDataName = 'GfdBuckInfiniteBus';         % Single grid-feeding buck converter and infinite bus
@@ -37,7 +37,8 @@ cd(fileparts(mfilename('fullpath')));
 %% Set user data type
 % If user data is in excel format, please set 1. If it is in json format,
 % please set 0.
-UserDataType = 1;
+% UserDataType = 1;
+UserDataType = 0;
 
 %% Run toolbox
 SimplusGT.Toolbox.Main();  
