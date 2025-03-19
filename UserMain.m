@@ -21,7 +21,13 @@ clear all; clc; close all;
 % UserDataName = 'IEEE_30Bus';
 % UserDataName = 'IEEE_57Bus';
 % UserDataName = 'AU14Gen_59Bus';
-UserDataName = 'NETS_NYPS_68Bus';
+% UserDataName = 'NETS_NYPS_68Bus';
+UserDataName = 'NETS_NYPS_68bus_detuned_gov_FS';
+% UserDataName = 'NETS_NYPS_68bus_orginal';
+% UserDataName = 'NETS_NYPS_68bus_tuned_gov_FS';
+% UserDataName = 'NETS_NYPS_68bus_tunedAgainst_gov_FS';
+% UserDataName = 'Test_68Bus_IBR_Load_Fault';
+% UserDataName = 'Test_68Bus_IBR_17_14_7';
 %
 % Dc power system examples:
 % UserDataName = 'GfdBuckInfiniteBus';         % Single grid-feeding buck converter and infinite bus
@@ -37,8 +43,8 @@ cd(fileparts(mfilename('fullpath')));
 %% Set user data type
 % If user data is in excel format, please set 1. If it is in json format,
 % please set 0.
-% UserDataType = 1;
-UserDataType = 0;
+UserDataType = 1;
+% UserDataType = 0;
 
 %% Run toolbox
 SimplusGT.Toolbox.Main();  

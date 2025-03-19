@@ -227,17 +227,17 @@ end
 % Modal Analysis
 % ==================================================
 
-fprintf('\n')
-fprintf('==================================\n')
-fprintf('Modal Analysis: State Space \n')
-fprintf('==================================\n')
-if UserDataStruct.Advance.EnableParticipation == 1
-    FigN = 300;
-    EigenvalueIndex = [1,26,31];	% Choose the index of eigenvalue for participation analysis
-    SimplusGT.Modal.ModalAnalysisStateSpace(ObjGsysSs,EigenvalueIndex,FigN);
-else
-    fprintf('Warning: This function is disabled.\n')
-end
+% fprintf('\n')
+% fprintf('==================================\n')
+% fprintf('Modal Analysis: State Space \n')
+% fprintf('==================================\n')
+% if UserDataStruct.Advance.EnableParticipation == 1
+%     FigN = 300;
+%     EigenvalueIndex = [1,26,31];	% Choose the index of eigenvalue for participation analysis
+%     SimplusGT.Modal.ModalAnalysisStateSpace(ObjGsysSs,EigenvalueIndex,FigN);
+% else
+%     fprintf('Warning: This function is disabled.\n')
+% end
 
 fprintf('\n')
 fprintf('==================================\n')
